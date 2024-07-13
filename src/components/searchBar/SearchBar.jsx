@@ -11,16 +11,19 @@ const SearchBar = () => {
     minPrice: 0,
     maxPrice: 0,
   });
-const switchType = (val) =>{
-    setQuery((prev)=>({...prev, type: val}))
-}
-
+  const switchType = (val) => {
+    setQuery((prev) => ({ ...prev, type: val }));
+  };
 
   return (
     <div className="searchBar">
       <div className="type">
         {types.map((type) => (
-          <button key={type} onClick={() => switchType(type)} className= {query.type === type? "active" : ""}>
+          <button
+            key={type}
+            onClick={() => switchType(type)}
+            className={query.type === type ? "active" : ""}
+          >
             {type}
           </button>
         ))}
@@ -42,7 +45,7 @@ const switchType = (val) =>{
           placeholder="max price"
         />
         <button>
-          <CiSearch />
+          <CiSearch className="searchicon" />
         </button>
       </form>
     </div>
