@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.scss";
 
 const Navbar = () => {
@@ -6,20 +7,20 @@ const Navbar = () => {
   return (
     <nav className="nav">
       <div className="left">
-        <a href="/" className="logo">
+        <Link href="/" className="logo">
           <img src="/public/logo.png" alt="logo image" />
           <span>P'Links</span>
-        </a>
-        <a href="/">Home</a>
-        <a href="/">About</a>
-        <a href="/">Contact</a>
-        <a href="/">Agent</a>
+        </Link>
+        <Link href="/">Home</Link>
+        <Link href="/">About</Link>
+        <Link href="/">Contact</Link>
+        <Link href="/">Agent</Link>
       </div>
       <div className="right">
-        <a href="/">Sign in</a>
-        <a href="/" className="register">
+        <Link href="/">Sign in</Link>
+        <Link href="/" className="register">
           Sign up
-        </a>
+        </Link>
         <div className="menuIcon">
           <img
             src="/menu.png"
@@ -28,12 +29,12 @@ const Navbar = () => {
           />
         </div>
         <div className={open ? "menu active" : "menu"}>
-          <a href="/">Home</a>
-          <a href="/">About</a>
-          <a href="/">Contact</a>
-          <a href="/">Agent</a>
-          <a href="/">Sign in</a>
-          <a href="/">Sign up</a>
+          <Link href="/">Home</Link>
+          <Link href="/">About</Link>
+          <Link href="/">Contact</Link>
+          <Link href="/">Agent</Link>
+          <Link href="/">Sign in</Link>
+          <Link href="/">Sign up</Link>
         </div>
       </div>
     </nav>

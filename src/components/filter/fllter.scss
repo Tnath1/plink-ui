@@ -1,0 +1,61 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  h1 {
+    font-weight: 300;
+    font-size: 24px;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    label {
+      font-size: 15px;
+    }
+
+    input,
+    select {
+      // there might be some issue here original value is 100px
+      width: 100px;
+      padding: 10px;
+      border: 1px solid #e0e0e0;
+      border-radius: 5px;
+      font-size: 14px;
+
+      option
+      {
+        padding: 50px;
+      }
+    }
+  }
+
+  .top{
+    input{
+      width: 100%;  
+    }
+  }
+
+.buttom{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    button{
+        width: 100px;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        background-color: #fece51;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .searchicon{
+            height: 24px;
+            width: 24px;
+        }
+    }
+}
+}
