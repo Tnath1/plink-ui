@@ -7,10 +7,10 @@ const HomePage = () => {
     <div className="homePage">
       <div className="textcontainer">
         <div className="txtwrapper">
-          <h1 className="title">Find Real Estate & Get Your Dream Place</h1>
+          <h1 className="title">Find Real Estate Properties & Get Your Dream Place</h1>
           <p>
             Discover the perfect property with our comprehensive real estate
-            listings. Whether you're looking to buy, rent, or invest, we provide
+            listings. Whether you're looking to buy or rent, we provide
             a seamless experience to help you find your dream home.
           </p>
           <SearchBar />
