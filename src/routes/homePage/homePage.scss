@@ -1,0 +1,53 @@
+div.homePage {
+  // background-color: red;
+  display: flex;
+  height: 100vh;
+
+  .imgcontainer {
+    flex: 2;
+    background-color: #fcf5f3;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 115%;
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  .textcontainer {
+    flex: 3;
+    .txtwrapper{
+      padding-right: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
+      // background-color: aqua;
+      height: 100%;
+      p{
+        font-size: 22px;
+      }
+
+      .title{
+        font-size: 64px;
+      }
+
+      .boxes{
+        display: flex;
+        justify-content: space-between;
+
+        h1{
+          font-size: 36px;
+        }
+        h2{
+          font-size: 20px;
+          font-weight: 400
+        }
+      }
+  
+    }
+  }
+}
