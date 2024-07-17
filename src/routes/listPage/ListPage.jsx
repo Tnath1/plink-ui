@@ -20,7 +20,7 @@ const ListPage = () => {
         </div>
       </div>
       <div className="mapcontainer">
-        <Maps/>
+        <Maps items={data}/>
       </div>
     </div>
   );
