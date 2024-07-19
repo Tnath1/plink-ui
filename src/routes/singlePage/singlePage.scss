@@ -1,8 +1,31 @@
+@import "../../responsive.scss";
+
 .singlePage {
   display: flex;
   height: 100vh;
+
+  @include md {
+    flex-direction: column;
+    scrollbar-width: thin;
+    scrollbar-color: #bfbfbf #f1f1f1;
+    overflow: scroll;
+    padding-bottom: 100px;
+  }
+
   .details {
     flex: 3;
+    height: 100%;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #bfbfbf #f1f1f1;
+
+    @include md {
+      flex: none;
+      height: max-content;
+      margin-bottom: 50px;
+      // height: 100%;
+      // overflow: scroll;
+    }
 
     .wrapper {
       padding-right: 50px;
@@ -62,6 +85,7 @@
           margin-top: 50px;
           color: #555;
           line-height: 20px;
+          font-size: 18px;
         }
       }
     }
@@ -69,9 +93,122 @@
   .features {
     flex: 2;
     background-color: #fcf5f3;
+    height: 100%;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #bfbfbf #f1f1f1;
+
+    @include md {
+      flex: none;
+      height: max-content;
+      padding-top: 50px;
+      // height: 100%;
+      // overflow: scroll;
+    }
 
     .wrapper {
       padding: 0px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      img,
+      .img {
+        width: 24px;
+        height: 24px;
+      }
+
+      .title {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .feature {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img,
+        .img {
+          background-color: rgba(254, 205, 81, 0.209);
+        }
+
+        .featureText {
+          span {
+            font-weight: bold;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+      .listVertical {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 10px;
+        background-color: white;
+        border-radius: 10px;
+      }
+      .listHorizontal {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 20px 10px;
+        background-color: white;
+        border-radius: 10px;
+      }
+
+      .sizes {
+        display: flex;
+        justify-content: space-between;
+
+        @include lg {
+          font-size: 12px;
+        }
+
+        .size {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          background-color: white;
+          padding: 10px;
+          border-radius: 5px;
+        }
+      }
+
+      .mapContainer {
+        width: 100%;
+        height: 200px;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        @include md {
+          margin-bottom: 50px;
+        }
+
+        button {
+          padding: 20px;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          background-color: white;
+          border: 1px solid #ffe8ad;
+          border-radius: 5px;
+          cursor: pointer;
+
+          .img {
+            width: 16;
+            height: 16px;
+          }
+        }
+      }
     }
   }
 }
