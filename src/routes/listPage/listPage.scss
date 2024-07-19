@@ -8,10 +8,11 @@ div.listPage {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    overflow-y: scroll;
+    // border:  1px solid red;
+    overflow-y: auto;
     padding-bottom: 200px;
-    scrollbar-width: thin; /* For Firefox */
-    scrollbar-color: #bfbfbf #f1f1f1; /* For Firefox */
+    scrollbar-width: thin; 
+    scrollbar-color: #bfbfbf #f1f1f1; 
   }
 
   .listcontainer {
