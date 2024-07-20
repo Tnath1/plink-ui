@@ -1,13 +1,8 @@
-
 import List from "../../components/list/List";
 import "./profilePage.scss";
 import Chat from "../../components/chat/Chat";
 
-im
-
 const ProfilePage = () => {
-
-  
   return (
     <div className="profilePage">
       <div className="details">
