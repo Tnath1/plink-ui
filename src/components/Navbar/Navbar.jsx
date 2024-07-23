@@ -4,12 +4,12 @@ import "./Navbar.scss";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const user = true;
+  const user = false;
   return (
     <nav className="nav">
       <div className="left">
         <Link href="/" className="logo">
-          <img src="/public/logo.png" alt="logo image" />
+          <img src="/logo.png" alt="logo image" />
           <span>P'Links</span>
         </Link>
         <Link href="/">Home</Link>
@@ -29,7 +29,6 @@ const Navbar = () => {
           </div>
         ) : (
           <>
-            {" "}
             <Link href="/">Sign in</Link>
             <Link href="/" className="register">
               Sign up
